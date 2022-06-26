@@ -1,0 +1,258 @@
+/*** xlg ***/
+@media screen and (max-width: 1400px){
+    .container{
+
+    }
+}
+/*** lg ***/
+@media screen and (max-width: 1200px){
+    .container{
+        max-width: 1000px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .feature{
+        padding: 30px 10px;
+    }
+    .feature img{
+        height: 70px;
+        margin-bottom: 8px;
+     }
+     .course ul li strong {
+        line-height: 14px;
+    }
+    .course ul li svg {
+        width: 15px;
+        height: 15px;
+    }
+    footer{
+        padding: 50px 0 20px;
+    }
+    footer ul {
+        padding: 0 10px;
+    }
+    footer ul li strong {
+        color: #bae4ba;
+        font-size: 25px;
+    }
+    .col_7_10 {
+        flex-basis: 98%;
+}
+.col_3_10 {
+    flex-basis: 96%;
+}
+}
+/*** md ***/
+
+@media screen and (max-width: 992px){
+    .feature h3 {
+        font-size: 20px;
+    }
+    .feature span{
+        font-size: 14px;
+    }
+    h2{
+        padding-bottom: 20px;
+    }
+    .course h3 {
+        line-height: 20px;
+    }
+    .btn {
+        font-size: 16px;
+        line-height: 14px;
+        padding: 10px 20px;
+}
+.course ul{
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 11px;
+}
+.course ul li strong {
+    line-height: 25px;
+}
+}
+/*** sm ***/
+@media screen and (max-width: 768px){
+   .bannerContent h1{
+    font-size: 36px;
+    line-height: 40px;
+   }
+   .feature h3 {
+    font-size: 22px;
+}
+   .bannerContent p{
+    font-size: 16px;
+    line-height: 21px;
+    margin: 10px 0;
+   }
+   .customer {
+    flex-basis: 21%;
+    padding: 10px;
+}
+.col_1_4 {
+    flex-basis: 50%;
+}
+.feedback{
+    flex-basis:
+}
+}
+/*** xsm ***/
+@media screen and (max-width: 575px){
+    .conainer{
+        padding-left: 19px;
+        padding-right: 32px;
+    }
+    nav ul {
+        flex-basis: 76%;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+.customer{
+    flex-basis: 35%;
+}
+.col_1_3 {
+    flex-basis: 100%;
+    padding: 15px;
+}
+nav ul {
+    flex-basis: 76%;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+nav,
+nav ul {
+  /* position: fixed; */
+  width: 100%;
+  height: 100%;
+}
+nav {
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.3);
+  /* opacity: 0;
+  transform: scale(0.3);
+  transition: all 0.25s; */
+}
+nav ul li {
+  display: table;
+  width: 100%;
+  height: calc(100% /4);
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.15);
+  perspective: 0px;
+  transform: rotateX(-90deg) scale(0.5);
+  transition: all 0.3s ease 0.1s;
+}
+nav ul li a {
+  /* display: table-cell; */
+  vertical-align:  text-top;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5em;
+  letter-spacing: 0.2em;
+  color:#21B573;
+  text-shadow: 0 0 3px rgba(0,0,0,0.3);
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 100;
+}
+nav ul li a:hover {
+  background: rgba(255,255,255,0.1);
+}
+#toggle {
+  display: none;
+}
+#toggle + #toggle-btn,
+.nav-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#toggle + #toggle-btn {
+  height: 40px;
+  width: 40px;
+  z-index: 1000;
+  background: rgba(0,0,0,0.05);
+}
+.nav-icon,
+.nav-icon:before,
+.nav-icon:after {
+  position: absolute;
+  height: 4px;
+  width: 40px;
+  margin: 18px 0;
+  z-index: 900;
+  border-radius: 3px;
+  background: #21B573;
+  transition: all 0.25s;
+}
+.nav-icon:before {
+  content: "";
+  margin-top: -18px;
+}
+.nav-icon:after {
+  content: "";
+  margin-top: 18px;
+}
+
+
+#toggle:checked ~ nav {
+    opacity: 1;
+    transform: scale(0.8);
+    margin: 11px;
+    padding-right: 259px;
+}
+#toggle:checked ~ .nav-icon {
+  background: rgba(255,0,0,0);
+}
+#toggle:checked ~ .nav-icon:before {
+  transform: rotate(-225deg);
+  margin-top: 0;
+}
+#toggle:checked ~ .nav-icon:after {
+  transform: rotate(225deg);
+  margin-top: 0;
+}
+#toggle:checked ~ nav ul li {
+  transform: rotateY(0deg) scale(1);
+}
+
+nav ul li .btn{
+    display: none;
+}
+
+
+
+.logo {
+    flex-basis: 20%;
+    /* position: fixed; */
+    /* width: 86px; */
+    margin: 0px;
+    padding: 0px;
+    padding-left: 178px;
+    height: 263px;
+}
+
+
+.container {
+    max-width: 1000px;
+    padding-left: 15px;
+    padding-right: 71px;
+}
+
+.logo a img {
+    width: 146px;
+    height: 89px;
+    margin: 3px;
+    padding: 5px;
+}
+
+}
